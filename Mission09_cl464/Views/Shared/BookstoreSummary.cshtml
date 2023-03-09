@@ -22,7 +22,7 @@
             <li>Classification: @Model.Classification</li>
         </ul>
     </div>
-
+    <!-- takes user to the cart and passes in needed info to calculate price totals -->
     <form method="post" asp-page="/Purchase">
 
         <input type="hidden" asp-for="@Model.BookId" />

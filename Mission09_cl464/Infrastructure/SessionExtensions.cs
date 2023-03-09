@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 
+// code to keep track of session data
 namespace Mission09_cl464.Infrastructure
 {
     public static class SessionExtensions
