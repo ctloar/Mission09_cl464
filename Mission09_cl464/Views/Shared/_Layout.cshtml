@@ -7,14 +7,24 @@
     <link href="~/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/css/site.css" />
-
+    <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
+    <div class="bg-dark text-white p-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col navbar-brand">BOOK STORE</div>
+                <div class="col-6 text-right">
+                    <vc:cart-summary />
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- HERE IS MY EXTRA BOOTSTRAP - added flex box to display 2 links on same line -->
-    <div class="bg-dark text-white d-flex justify-content-between">
+    @*<div class="bg-dark text-white d-flex justify-content-between">
         <a class="p-3 text-white">Bookstore</a>
         <a asp-page="/Purchase" class="p-3 text-white">View Cart</a>
-    </div>
+    </div>*@
 
     <div class="row m-1 p-1">
         <div id="types" class="col-3">
@@ -27,7 +37,7 @@
             </main>
         </div>
     </div>
-    
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
